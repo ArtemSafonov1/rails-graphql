@@ -52,4 +52,5 @@ group :development do
   gem 'rubocop', '~> 1.52'
   gem 'rubocop-rails', '~> 2.19'
   gem 'rubocop-performance', '~> 1.18'
+  gem "faker", "~> 3.2"
 end
