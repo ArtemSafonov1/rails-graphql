@@ -1,0 +1,18 @@
+---
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  Include:
+    - app/**/*.rb
+    - config/**/*.rb
+  NewCops: enable
+  TargetRubyVersion: 3
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes.rb
