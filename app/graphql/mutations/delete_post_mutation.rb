@@ -8,7 +8,7 @@ module Mutations
     field :errors, [String], null: true
 
     def resolve(id:)
-      post = post.find_by(id: id)
+      post = Post.find_by(id: id)
       return { post: nil, errors: ["Post with id=#{id} is not found"] } unless post
 
       post.destroy!
